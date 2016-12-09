@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :authenticate
 
   helper_method :current_user
+  layout 'common_layout/application'
 
   def authenticate
     unless current_user
